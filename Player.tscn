@@ -1,83 +1,17 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://PlayerVisualizer.gd" type="Script" id=2]
-[ext_resource path="res://Player.png" type="Texture" id=3]
-[ext_resource path="res://ActionTimer.gd" type="Script" id=4]
-[ext_resource path="res://timer1.png" type="Texture" id=5]
-[ext_resource path="res://timer2.png" type="Texture" id=6]
+[ext_resource path="res://Unit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TimerDisplay.tscn" type="PackedScene" id=2]
+[ext_resource path="res://PlayerInput.gd" type="Script" id=3]
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Unit" instance=ExtResource( 1 )]
 
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
-script = ExtResource( 1 )
-_sections_unfolded = [ "Transform", "Z Index" ]
+[node name="TimerDisplay" parent="." index="1" instance=ExtResource( 2 )]
 
-[node name="TargetVisualizer" type="Node2D" parent="." index="0"]
+TimerPath = NodePath("../ActionTimer")
 
-script = ExtResource( 2 )
+[node name="PlayerInput" type="Node" parent="." index="3"]
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
-
-texture = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="ActionTimer" type="Node2D" parent="." index="2"]
-
-modulate = Color( 1, 1, 1, 0 )
-script = ExtResource( 4 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="TextureProgress" type="TextureProgress" parent="ActionTimer" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -64.0
-margin_top = -40.0
-margin_bottom = 24.0
-rect_scale = Vector2( 2, 1.5 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 0
-min_value = 0.0
-max_value = 100.0
-step = 1.0
-page = 0.0
-value = 0.0
-exp_edit = false
-rounded = false
-texture_under = ExtResource( 5 )
-texture_over = null
-texture_progress = ExtResource( 6 )
-fill_mode = 5
-radial_initial_angle = 180.0
-radial_fill_degrees = 360.0
-radial_center_offset = Vector2( 0, 0 )
-nine_patch_stretch = false
-_sections_unfolded = [ "Radial Fill", "Textures", "Visibility", "custom_styles" ]
-
-[node name="Timer" type="Timer" parent="ActionTimer" index="1"]
-
-process_mode = 1
-wait_time = 1.0
-one_shot = true
-autostart = false
-
-[node name="Tween" type="Tween" parent="ActionTimer" index="2"]
-
-repeat = false
-playback_process_mode = 1
-playback_speed = 1.0
-playback/active = false
-playback/repeat = false
-playback/speed = 1.0
+script = ExtResource( 3 )
 
 

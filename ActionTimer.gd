@@ -1,9 +1,11 @@
 extends Node2D
 
-onready var timer = get_node("Timer")
-
+export (NodePath)var TimerPath = null
+var timer = null
 
 func _ready():
+	timer = get_node(TimerPath)
+	get_parent().timer = self
 	set_physics_process(false)
 
 
