@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://ActionTimer.gd" type="Script" id=1]
-[ext_resource path="res://timer1.png" type="Texture" id=2]
-[ext_resource path="res://timer2.png" type="Texture" id=3]
+[ext_resource path="res://Units/Player/TimerDisplay.gd" type="Script" id=1]
+[ext_resource path="res://Units/Player/timer1.png" type="Texture" id=2]
+[ext_resource path="res://Units/Player/timer2.png" type="Texture" id=3]
 
 [node name="TimerDisplay" type="Node2D" index="0"]
 
@@ -43,7 +43,6 @@ radial_initial_angle = 180.0
 radial_fill_degrees = 360.0
 radial_center_offset = Vector2( 0, 0 )
 nine_patch_stretch = false
-_sections_unfolded = [ "Rect" ]
 
 [node name="Tween" type="Tween" parent="." index="1"]
 

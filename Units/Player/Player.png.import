@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/timer2.png-cbadc8f0876991724a8284a23d5aa309.stex"
+path="res://.import/Player.png-578bfa738900a0920083b22cae3e67d9.stex"
 
 [deps]
 
-source_file="res://timer2.png"
-source_md5="0d4cf4afe682b49269751f209ca4c03a"
+source_file="res://Units/Player/Player.png"
+source_md5="4681209024eea1569543e60b2a6950c2"
 
-dest_files=[ "res://.import/timer2.png-cbadc8f0876991724a8284a23d5aa309.stex" ]
-dest_md5="37c1aa18c5fb8461098deeca29f6690b"
+dest_files=[ "res://.import/Player.png-578bfa738900a0920083b22cae3e67d9.stex" ]
+dest_md5="599e3bad475d55dab0a277e8bb0e6cd8"
 
 [params]
 

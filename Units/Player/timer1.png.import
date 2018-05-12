@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/timer1.png-da8794ccc58e0aa67c9351143c03e4be.stex"
+path="res://.import/timer1.png-4fe84ae7dedfe08ababd2976ef199e0a.stex"
 
 [deps]
 
-source_file="res://timer1.png"
+source_file="res://Units/Player/timer1.png"
 source_md5="6bcb62adbafef532be82fcfb4c2399f3"
 
-dest_files=[ "res://.import/timer1.png-da8794ccc58e0aa67c9351143c03e4be.stex" ]
+dest_files=[ "res://.import/timer1.png-4fe84ae7dedfe08ababd2976ef199e0a.stex" ]
 dest_md5="43b34c2a117aeeb43593cd71cfc5cfe5"
 
 [params]

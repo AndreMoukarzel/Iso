@@ -12,7 +12,7 @@ var grid_size = Vector2(16, 16)
 
 var grid = []
 onready var Obstacle = preload("res://Obstacle.tscn")
-onready var Player = preload("res://Player.tscn")
+onready var Player = preload("res://Units/Player/Player.tscn")
 # We need to add the Player and Obstacles as children of the YSort node so when the player is below
 # an obstacle on the screen Y axis, he'll be drawn above it
 onready var Sorter = get_child(0)

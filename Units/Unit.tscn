@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Unit.gd" type="Script" id=1]
-[ext_resource path="res://Player.png" type="Texture" id=2]
+[ext_resource path="res://Units/Unit.gd" type="Script" id=1]
+[ext_resource path="res://Units/Player/Player.png" type="Texture" id=2]
+
+
 
 [node name="Unit" type="KinematicBody2D"]
 
